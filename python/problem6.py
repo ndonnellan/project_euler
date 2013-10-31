@@ -13,11 +13,7 @@
 # for the first 100 natural numbers
 
 def sum_of_squares_for_range(r):
-  s = 0
-  for n in r:
-    s += n ** 2
-
-  return s
+  return reduce(lambda x, y: x + y**2, r, 0)
 
 def square_of_sum_for_range(r):
   return reduce(lambda x, y: x + y, r, 0)**2
