@@ -44,5 +44,6 @@ def find_triplet(a0, b0):
 
   return [0,0,0]
 
-
-print "The Pythagorean triplet for which a + b + c = 1000 is {0}".format(find_triplet(1,2))
+ans = find_triplet(1,2)
+print "The Pythagorean triplet for which a + b + c = 1000 is {0}".format(ans)
+print "The product abc is {0}".format(reduce(lambda x,y: x*y, ans))
